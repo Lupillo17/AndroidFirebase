@@ -1,5 +1,6 @@
 package com.example.firebase
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
@@ -69,5 +70,9 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+
+    fun loginActivity(view: View) {
+        startActivity(Intent(this@MainActivity, LoginActivity::class.java))
     }
 }
